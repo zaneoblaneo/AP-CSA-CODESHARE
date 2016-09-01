@@ -1,0 +1,11 @@
+package zaneoblaneo.SciFiName;
+
+public class MainClass {
+	public static void main(String[] args){
+		String name = "Ashton Kent";
+		String scifiName = "";
+		for(char c : ScifiGen.genScifiName("Ashton Kent")){
+			scifiName += String.valueOf(c);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package zaneoblaneo.ifItIsRaining;
+
+import java.util.Hashtable;
+
+public class WeatherIndex {
+	
+	public static void makeWeatherIndex(){
+		Hashtable<Integer, String> weatherIndex = new Hashtable<Integer, String>();
+
+		
+	}
+	
+}

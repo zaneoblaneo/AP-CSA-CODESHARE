@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="zaneoblaneo.newSystem.MainClass"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="zaneoblaneo.ifItIsRaining.StringTester"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="java.awt.Desktop"/>
+<fullyQualifiedTypeName name="com.sun.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="javax.media.bean.playerbean.MediaPlayer"/>
+<fullyQualifiedTypeName name="javax.media.Manager"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="javax.media.Player"/>
+<fullyQualifiedTypeName name="java.awt.GraphicsEnvironment"/>
+<fullyQualifiedTypeName name="java.awt.Toolkit"/>
+<fullyQualifiedTypeName name="java.net.URISyntaxException"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.util.stream.Stream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="zaneoblaneo.learningNetworking.MainClass"/>
+<fullyQualifiedTypeName name="zaneoblaneo.learningNetworking.server.TCPServer"/>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="zaneoblaneo.f11Testing.JFrameInit"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="zaneoblaneo.utils.Print"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,43 @@
+package zaneoblaneo.magPie116;
+
+import zaneoblaneo.utils.*;
+
+public class StringHandling {
+	String outputSentence="";
+	public static void handleString(String[] SASentence){
+		String sentence="";
+		for(String w : SASentence){
+			sentence += " "+w;
+		}
+		if(sentence.contains("LIKE SUMMER")){Print.println("YOU ARE NUTTS! SUMMER = BAD!"); return;}
+		switch (SASentence[1].toUpperCase()) {
+		case "I": parseI(SASentence); break;
+		case "YOU" : parseYou(SASentence); break;
+		case "HE" : parseHe(SASentence); break;
+		case "SHE" : parseShe(SASentence); break;
+		case "DO" : parseQuestion(SASentence); break;
+		default: break;
+		}
+	}
+	public static void parseI(String[] sentence){
+		switch (sentence[2].toUpperCase()){
+		case "LIKE" : Print.println("I like " + sentence[2] + " aswell!");
+		default: break;
+		}
+	}
+	public static void parseYou(String[] sentence){
+		
+	}
+	public static void parseHe(String[] sentence){
+		
+	}
+	public static void parseShe(String[] sentence){
+		
+	}
+	public static void parseQuestion(String[] sentence){
+		
+	}
+	public static void parseLike(String[] sentence){
+		
+	}
+}

@@ -1,0 +1,14 @@
+package zaneoblaneo.utils;
+
+public class Print {
+	public Print(){
+		Exception e = new Exception();
+		print(e);
+	}
+	public static void print(Object o){
+		
+	}
+	public static void println(Object o){
+		
+	}
+}

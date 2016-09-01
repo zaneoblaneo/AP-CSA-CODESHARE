@@ -1,0 +1,36 @@
+package zaneoblaneo.SciFiName;
+
+public class ScifiGen {
+	private static char[] scifiName;
+	private static char[] world;
+	private static String worldHelper = "thebrownfoxjumpedoverthelazydog";
+	private static char[] althebet = "abcdefghijklmnopqrstuvwxyz ".toCharArray();
+	
+	public static String genScifiName(String name){
+		char[] caName = name.toLowerCase().toCharArray();
+		world = new char[(int) (name.length()/1.125)];
+		
+		scifiName = caName;
+		int i = 0;
+		for(char c : caName){
+			c = althebet[c%(i+1)%27];
+			
+			scifiName[i] = c;
+			i++;
+		}
+		for(i=0;i<world.length;i++){
+			world[i] = worldHelper.toCharArray()[caName[i]%(i+1)i%31];
+		}
+		
+		
+		String tmp = String.valueOf(scifiName) + " from the planet: " + String.valueOf(world);
+		return tmp;
+	}
+	
+	
+	
+	//Get scifiName
+	public char[] getScifiName(){
+		return scifiName;
+	}
+}

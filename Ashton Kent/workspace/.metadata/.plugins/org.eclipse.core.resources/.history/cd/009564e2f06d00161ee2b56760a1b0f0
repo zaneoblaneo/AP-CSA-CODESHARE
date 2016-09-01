@@ -1,0 +1,73 @@
+package zaneoblaneo.f11Testing;
+
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Toolkit;
+import java.net.URI;
+import java.nio.file.Paths;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class JFrameInit extends Thread{
+	String[] args;
+	
+	public JFrameInit(String[] args){
+		this.args = args;
+		initJFrame(args);
+	}
+	public void run(){
+		initJFrame();
+	}
+	
+	static GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+	public void initJFrame(String[] args){
+		JFrame frame = new JFrame();
+		JPanel panel = new JPanel();
+		JLabel label = new JLabel();
+		String arg;
+		try {
+			arg = Paths.get(this.getClass().getResource("youare.gif").toURI()).toString();
+			ImageIcon icon = new ImageIcon(arg);
+			frame.setSize(480,360);
+			label.setIcon(icon);
+			label.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+			label.setLocation(0,0);
+			panel.setLocation(1,1);
+			panel.add(label);
+			frame.getContentPane().add(panel);
+			frame.setLocationRelativeTo(null);
+			frame.setResizable(true);
+//			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+			frame.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+			frame.setUndecorated(true);
+			frame.setAlwaysOnTop(true);
+			device.setFullScreenWindow(frame);
+			frame.setVisible(true);
+			audio(args);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void audio(String[] args){
+		try{
+			URI uri;
+			uri = new URI(args[0]);
+			Clip clip = AudioSystem.getClip();
+			clip.open(AudioSystem.getAudioInputStream(uri.toURL()));
+			FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+			gainControl.setValue(6.0206f);
+			clip.loop(Clip.LOOP_CONTINUOUSLY);
+			clip.start();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package zaneoblaneo.ifItIsRaining;
+
+import java.nio.file.Paths;
+
+public class MainClass {
+	public static void main(String[] args){
+//		StringTester.stringTester(args);
+		System.out.println(Paths.get(StringTester.class.getResource("StringTester.class") + "/../codes.txt"));
+	}
+}

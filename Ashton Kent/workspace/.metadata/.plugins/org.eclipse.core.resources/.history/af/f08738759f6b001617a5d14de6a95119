@@ -1,0 +1,15 @@
+package zaneoblaneo.ifItIsRaining;
+
+import java.nio.file.Paths;
+import java.util.Random;
+
+public class StringTester {
+	
+	public static void stringTester(String[] args){
+		Random random = new Random();
+		String[] conditions = Utils.readFileToArray(Paths.get("codes.txt"));
+		String weatherCondition = conditions[random.nextInt(conditions.length)];
+		System.out.println(weatherCondition.contains("thunder"));
+	}
+
+}

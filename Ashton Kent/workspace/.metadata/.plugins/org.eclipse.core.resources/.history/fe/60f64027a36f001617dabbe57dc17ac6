@@ -1,0 +1,19 @@
+package zaneoblaneo.utils;
+
+import java.util.Date;
+import java.util.Hashtable;
+
+public class Print {
+	public static Hashtable<Date,String> log;
+	public Print(){
+		log = new Hashtable<Date,String>();
+	}
+	
+	public static void print(Object o){
+		System.out.print(o);
+		log.put(log.size(),o)
+	}
+	public static void println(Object o){
+		System.out.println(o);
+	}
+}

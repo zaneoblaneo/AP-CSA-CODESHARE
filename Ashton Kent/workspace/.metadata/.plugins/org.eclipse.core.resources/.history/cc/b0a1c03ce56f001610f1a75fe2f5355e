@@ -1,0 +1,21 @@
+package zaneoblaneo.magPie116;
+
+import zaneoblaneo.utils.*;
+
+public class StringHandling {
+	public static void handleString(String[] sentence){
+		switch (sentence[0].toUpperCase()) {
+		case "I": parseI(sentence); break;
+		case "YOU" : parseYou(sentence); break;
+		case "U" : parseYou(sentence); break;
+		default:
+			break;
+		}
+	}
+	public static void parseQuestion(String[] sentence){
+		
+	}
+	public static void parseLike(String[] sentence){
+		
+	}
+}

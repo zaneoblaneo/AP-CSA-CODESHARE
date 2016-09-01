@@ -1,0 +1,12 @@
+package zaneoblaneo.SciFiName;
+
+public class MainClass {
+	public static void main(String[] args){
+		if(args.length == 0){
+			String name = "Ashton Kent";
+		} else {
+			String name = args[0]
+		}
+		System.out.println("Your Scifi name is \n\t" + ScifiGen.genScifiName(name) + "\n\n\nthanks for using Ashton's scifi Name generator!");
+	}
+}
