@@ -1,9 +1,0 @@
-package zaneoblaneo.ifItIsRaining;
-
-import java.nio.file.Paths;
-
-public class MainClass {
-	public static void main(String[] args){
-		StringTester.stringTester(args);
-	}
-}
